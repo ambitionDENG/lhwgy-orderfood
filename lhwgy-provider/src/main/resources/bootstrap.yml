@@ -1,0 +1,46 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: lhwgy-provider
+  cloud:
+    config:
+      profile: sqlserver
+      uri: http://127.0.0.1:8761/
+
+  datasource:
+    druid:
+      url: ${url}
+      username: ${username}
+      password: ${password}
+      driver-class-name: ${driver}
+      filters: stat
+      minIdle: 1
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      test-on-return: false
+      test-on-borrow: false
+      test-while-idle: true
+      validation-query: select 'x'
+      min-evictable-idle-time-millis: 300000
+      time-between-eviction-runs-millis: 60000
+      max-active: 20
+      max-wait: 60000
+      initial-size: 1
+
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+logging:                                # 配置日志级别，让hibernate打印出执行的SQL
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
