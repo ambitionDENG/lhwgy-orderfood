@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @time: 9:29
  */
 @RestController
-@Api(value = "DcDishStyle controller", tags = {"菜品查询接口"})
+@Api(value = "DcDishstyle controller", tags = {"菜品查询接口"})
 public class DcDishStyleController {
 
 }

@@ -11,9 +11,7 @@
     <modules>
         <module>lhwgy-eureka</module>
         <module>lhwgy-common</module>
-        <module>lhwgy-provider</module>
         <module>lhwgy-web</module>
+        <module>lhwgy-provider-up</module>
     </modules>
-
-
 </project>
