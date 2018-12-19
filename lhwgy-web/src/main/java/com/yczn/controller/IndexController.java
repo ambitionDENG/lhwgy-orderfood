@@ -25,21 +25,9 @@ public class IndexController {
         return "index";
     }
 
-    @Value("${driver}")
-    private String from;
-
-    @RequestMapping("/from")
-    @ResponseBody
-    public String from() {
-
-        return this.from;
-    }
-
-    public void setFrom(String from) {
-        this.from = from;
-    }
-
-    public String getFrom() {
-        return from;
+    @ApiOperation("进入订餐首页")
+    @GetMapping("/order")
+    public String order(){
+        return "order";
     }
 }

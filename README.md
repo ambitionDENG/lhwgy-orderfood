@@ -1,4 +1,4 @@
-## 			罗湖外国语订餐系统
+## 			罗湖外语学校订餐系统
 
 系统架构  winform 窗体嵌套web浏览器,订餐内容使用java实现读卡使用C#实现
 
@@ -14,7 +14,7 @@
 
 - 核心框架：Spring Boot Spring Cloud（用到的组件有eureka、feign、zuul、hystrix、ribbon)
 
-- 开发Api  Swagger2,swagger-ui-layer
+- 开放Api  Swagger2,swagger-ui-layer
 
   
 
