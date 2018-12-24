@@ -13,5 +13,6 @@
         <module>lhwgy-common</module>
         <module>lhwgy-web</module>
         <module>lhwgy-provider-up</module>
+        <module>lhwgy-configserver</module>
     </modules>
 </project>
