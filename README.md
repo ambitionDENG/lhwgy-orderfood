@@ -6,7 +6,7 @@
 
 - 数据库连接池：Alibaba Druid
 
-- 持久层框架：Mybatis
+- 持久层框架：Mybatis Mybatis Plus
 
 - 数据库：sqlserver2016
 
