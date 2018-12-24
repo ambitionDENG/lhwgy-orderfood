@@ -8,7 +8,7 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>config-server</name>
+    <name>lhwgy-configserver</name>
     <description>Spring Cloud project</description>
 
     <parent>
@@ -28,6 +28,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
+        <!-- 添加Eureka的依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>

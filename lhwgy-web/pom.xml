@@ -60,12 +60,16 @@
             <artifactId>swagger-ui-layer</artifactId>
             <version>1.0.0</version>
         </dependency>
-
+        <!--feign start-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--feign end-->
         <dependency>
             <groupId>com.yczn</groupId>
             <artifactId>lhwgy-common</artifactId>
