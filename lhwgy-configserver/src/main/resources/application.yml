@@ -1,20 +1,20 @@
 server:
-  port: 8761
+  port: 8762
 
+  # git管理配置
 spring:
-   application:
-     name: lhwgy-eureka
-
+  application:
+    name: lhwgy-configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yz0812/lhwgy-orderfood.git
+          searchPaths: file
+  #          username: yz0812
+  #          password: 8752885w
+# 配置服务注册中心
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/
-  instance:
-    prefer-ip-address:  true
-    ip-address: 127.0.0.1
-    instance-id: ${spring.application.name}:${server.port}
-  server:
-    enable-self-preservation: false
-    eviction-interval-timer-in-ms: 60000
+      defaultZone: http://127.0.0.1:8761/eureka/

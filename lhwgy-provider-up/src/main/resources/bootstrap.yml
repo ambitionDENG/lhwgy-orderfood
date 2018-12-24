@@ -1,12 +1,12 @@
 server:
-  port: 8762
+  port: 8763
 spring:
   application:
     name: lhwgy-provider-up
   cloud:
     config:
       profile: sqlserver
-      uri: http://127.0.0.1:8761/
+      uri: http://127.0.0.1:8762/
   rabbitmq:
     host: 127.0.0.1
     port: 5672
