@@ -9,6 +9,12 @@ spring:
      encoding: UTF-8
      content-type: text/html
      mode: LEGACYHTML5
+     prefix: classpath:/templates/
+     suffix: .html
+   mvc:
+     static-path-pattern: /**
+   resources:
+     static-locations: classpath:/static/ , file:D://IIS_Web/EmpImg/
 #   mvc:
   #   static-path-pattern: /static/**
 #   resources:
@@ -23,3 +29,5 @@ eureka:
 feign:
   hystrix:
     enabled: true
+
+

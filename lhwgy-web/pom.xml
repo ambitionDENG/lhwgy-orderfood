@@ -25,7 +25,7 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
-        <!--模板引擎-->
+        <!--模板引擎 start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -36,6 +36,7 @@
             <artifactId>nekohtml</artifactId>
             <version>1.9.18</version>
         </dependency>
+        <!--模板引擎 end-->
 
         <!--热部署-->
         <dependency>
@@ -43,13 +44,12 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
-
+        <!--swagger start-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>2.6.1</version>
         </dependency>
-
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
@@ -60,6 +60,7 @@
             <artifactId>swagger-ui-layer</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <!--swagger end-->
         <!--feign start-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -70,6 +71,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!--feign end-->
+
         <dependency>
             <groupId>com.yczn</groupId>
             <artifactId>lhwgy-common</artifactId>
@@ -98,6 +100,15 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!--热部署-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
         </plugins>
+
     </build>
 </project>
